@@ -100,7 +100,7 @@ if __name__ == '__main__':
 				# sheet['C' + str(i)] = C #str(res.values()).encode('gbk')
 				# val.write(unicode((sen + '\t' + str(res.keys()).encode('utf-8') + '\t' + str(res.values()) + '\n')).encode('gbk'))
 
-				string = A + '\t' + B + '\t' + C + '\t' + D + '\n'
+				string = str(i+1) + '\t' + A + '\t' + B + '\t' + C + '\t' + D + '\n'
 
 				# val.writelines(string.encode('utf-8'))
 				with open('val.txt','a') as f:
